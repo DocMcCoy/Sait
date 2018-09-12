@@ -37,12 +37,19 @@ body {
 
 /* Sophisticated */
 .sophisticated{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #FFF9EE;
+    
 
 }
 .sophisticated h1{
+    background-color: #646E78;
+    color: papayawhip;
+
 
 }
 .sophisticated h2{
+    color: #646E78;
 
 }
 .sophisticated hr {
@@ -50,21 +57,32 @@ body {
 }
 
 .sophisticated p {
+    color: #646E78;
 
 }
 
 .sophisticated a {
-    color: blanchedalmond
+    color: papayawhip;
+}
+
+.sophisticated a:visited {
+    color: #CCBFAA;
+    background-color: #646E78
 }
 
 /* Energetic */
 .energetic{
+    font-family: 'Abril Fatface', cursive;
 
 }
 .energetic h1{
+    color:white;
+    background-color: rgb(199, 0, 0);
 
 }
 .energetic h2{
+    color: white;
+    background-color: black
 
 }
 .energetic hr {
@@ -72,10 +90,21 @@ body {
 }
 
 .energetic p {
-
+    color: darkslategray;
 }
 
-.energetic a {
+.energetic a:link {
+    color: aliceblue;
+
+}
+.energetic a:visited {
+    color: blue;
+
+}
+.energetic a:hover {
+
+}
+.energetic a:active {
 
 }
 
@@ -84,9 +113,11 @@ body {
 
 }
 .relaxed h1{
+    font-family: 'Indie Flower', cursive;
 
 }
 .relaxed h2{
+    font-family: 'Indie Flower', cursive;
 
 }
 .relaxed hr {
@@ -94,6 +125,7 @@ body {
 }
 
 .relaxed p {
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -125,12 +157,18 @@ body {
 
 /* Fun */
 .fun{
+    background-color: darkgreen;
 
 }
 .fun h1{
+    font-family: 'Permanent Marker', cursive;
+    color: orangered;
 
 }
 .fun h2{
+    color: orange;
+    font: 'Permanent Marker', sans-serif;
+    font-family: 'Permanent Marker', cursive;
 
 }
 .fun hr {
@@ -138,7 +176,8 @@ body {
 }
 
 .fun p {
-
+    color: lightgoldenrodyellow;
+    font-family: 'comic sans', cursive;
 }
 
 .fun a {
