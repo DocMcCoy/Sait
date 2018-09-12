@@ -1,4 +1,8 @@
 /* Home Page */
+.active li a{
+    background-color: #7193B2;
+}
+
 .navbar ul {
     list-style-type: none;
     margin: 0;
@@ -26,11 +30,7 @@
 .navbar li a:hover {
     background-color: #7193B2;
 }
-/* testing blah blah */
 
-.active li a{
-    background-color: #7193B2;
-}
 body {
     background-color: #FFF9EE
 }
