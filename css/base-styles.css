@@ -1,0 +1,29 @@
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 100px;
+    background-color: white;
+    border: solid thick #7193B2;
+    padding: 1rem;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media (max-width: 700px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+}
