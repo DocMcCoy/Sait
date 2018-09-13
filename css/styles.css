@@ -65,63 +65,137 @@ body {
     padding: 14px 16px;
 }
 
+/* Wrapper */
+.wrapper {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 100px;
+    background-color: white;
+    border: solid thick #7193B2;
+    padding: 1rem;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 700px) {
+    .wrapper {
+        margin-top: 40px;
+    }
+}
+
 /* Sophisticated */
 .sophisticated{
     font-family: 'Libre Franklin', sans-serif;
     background-color: #FFF9EE;
-    
-
 }
-.sophisticated h1{
+
+.sophisticated header {
     background-color: #646E78;
-    color: papayawhip;
-
+    padding: 1rem;
+    border-bottom:  1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 15px 0px #707070;
 
 }
-.sophisticated h2{
-    color: #646E78;
 
+.sophisticated h1{
+    color: papayawhip;
+    drop: inset 6px 5px 15px 0px #707070;
+}
+
+.sophisticated h2{
+    color: papayawhip;
 }    
+
+.sophisticated section {
+    padding: 1rem;
+}
+
 .sophisticated p {
     color: #646E78;
-
 }
 
 .sophisticated a {
+    align-content: center;
+    margin: 5px;
     color: papayawhip;
+    background-color: #646E78;
+    border-bottom:  1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 15px 0px #707070;
 }
 
 .sophisticated a:visited {
     color: #CCBFAA;
-    background-color: #646E78
+    background-color: #646E78;
+}
+
+.sophisticated a:hover {
+    color: rgb(235, 226, 212);
+    background-color: #646E78;
+}
+
+.sophisticated a:active {
+    color: red;
+    background-color: #646E78;
 }
 
 /* Energetic */
-.energetic{
+.energetic {
     font-family: 'Abril Fatface', cursive;
-
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 100px;
+    background-color: white;
+    border: solid thick #7193B2;
+    /* padding: 1rem; */
+}
+.energetic header {
+    /* padding: 1rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: rgb(199, 0, 0);
 }
 .energetic h1{
+    margin: 0px;
+    padding-left: 1rem;
     color:white;
-    background-color: rgb(199, 0, 0);
-
-}
+    background: rgb(199, 0, 0);
+   }
 .energetic h2{
+    margin: 0px;
+    padding-left: 1rem;
     color: white;
-    background-color: black
-
-}
+    background: black;
+  }
 .energetic hr {
-
+    background: red
 }
 
+.energetic section {
+    padding: 1rem;
+    background: #B7C7BB;
+}
 .energetic p {
     color: darkslategray;
 }
 
-.energetic a:link {
-    color: aliceblue;
-
+.energetic a {
+    align-content: center;
+    margin: 5px;
+    
 }
 .energetic a:visited {
     color: blue;
@@ -171,20 +245,21 @@ body {
 
 /* Corporate */
 .corporate{
-
+    /* background-image: url("../img/texture1.jpg"); */
+    font-family: 'Old Standard TT', serif;
 }
 .corporate h1{
-
+    font-family: 'Old Standard TT', serif;
 }
 .corporate h2{
-
+    font-family: 'Old Standard TT', serif;
 }
 .corporate hr {
-
+    
 }
 
 .corporate p {
-
+    font-family: 'Old Standard TT', serif;
 }
 
 .corporate a {
