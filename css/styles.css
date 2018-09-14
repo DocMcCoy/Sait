@@ -95,6 +95,9 @@ ul {
 }
 
 /* Sophisticated */
+/* Colours - #FFF9EE #646E78 papayawhip #CCBFAA*/
+/* Fonts - Libre Franklin */
+
 .sophisticated{
     font-family: 'Libre Franklin', sans-serif;
     background-color: #FFF9EE;
@@ -126,8 +129,11 @@ ul {
     color: #646E78;
 }
 
+.sophisticated nav {
+    text-align: center;
+}
+
 .sophisticated a {
-    align-content: center;
     margin: 5px;
     color: papayawhip;
     background-color: #646E78;
@@ -152,6 +158,9 @@ ul {
 }
 
 /* Energetic */
+/* Colors - #594346 #212027 #f22f08 #8d2f23 #561e18 */
+/* Fonts - Abril Fatface & Monterrat */
+
 .energetic {
     font-family: 'Abril Fatface', cursive;
     margin: 0 auto;
@@ -166,124 +175,207 @@ ul {
     /* padding: 1rem; */
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background: rgb(199, 0, 0);
+    background: #f22f08;
 }
 .energetic h1{
     margin: 0px;
     padding-left: 1rem;
     color:white;
-    background: rgb(199, 0, 0);
+    background: #f22f08;
    }
 .energetic h2{
     margin: 0px;
     padding-left: 1rem;
     color: white;
-    background: black;
+    background: #212027;
   }
 .energetic hr {
-    background: red
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f22f08;
 }
 
 .energetic section {
     padding: 1rem;
-    background: #B7C7BB;
+    background: #DCDCDC;
 }
 .energetic p {
-    color: darkslategray;
+    font-family: 'Montserrat', sans-serif;
+    color: #212027;
 }
 
+.energetic nav {
+    text-align: center;
+}
 .energetic a {
-    align-content: center;
-    margin: 5px;
-    
+    background: #696969;
+    color: #DCDCDC;
+    font-size: 105%;
+    margin-left: 0px;
+    margin-right: 0px;   
 }
 .energetic a:visited {
-    color: blue;
+    color: #A9A9A9;
 
 }
 .energetic a:hover {
-
+    color: #f22f08;
 }
 .energetic a:active {
-
+    color: #f22f08;
 }
 
 /* Relaxed */
-.relaxed{
-    background-color: #fafafa;
+/* Colours - #5c3d46 #5c868d #99bfaa #c8d6ca #e7f5de */
+/* Fonts - Indie Flower & Lato*/
 
+.relaxed{
+    background-color: #e7f5de;
 }
+
 .relaxed h1{
+    text-align: center;
+    padding: 20PX;
+    margin: .5em;
     font-family: 'Indie Flower', cursive;
-    color: white;
-    background-color: red;
+    color: #c8d6ca;
+    background-color: #5c3d46;
 
 }
 .relaxed h2{
+    margin: NONE;
+    text-align: center;
     font-family: 'Indie Flower', cursive;
-    color: slategray;
+    color: #99bfaa;
 
 }
 .relaxed hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #5c3d46;
 
 }
 
 .relaxed p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkslategray;
-
+    font-family: 'Lato', sans-serif;
+    color: #5c868d;
 }
 
-.relaxed a:link {
-    background-color: peachpuff;
-
+.relaxed nav {
+    text-align: center;
+}
+.relaxed a {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    color: #e7f5de;
+    background-color: #99bfaa;
 }
 
 .relaxed a:visited {
-    background-color: #E8CA9D;
+    color: #e7f5de;
+    background-color: #c8d6ca;
 }
 
+.relaxed a:hover {
+    color: #e7f5de;
+    background-color: #5c868d;
+}
+
+.relaxed a:active {
+    color: #5c3d46;
+    background-color: #5c868d;
+}
+
+
 /* Corporate */
+/* Colors - #A2B1BF #6C767F #D8ECFF #363B40 #C2D4E5 */
 .corporate{
-    /* background-image: url("../img/texture1.jpg"); */
+    background: #D8ECFF;
+    background-image: url("../img/texture1.jpg"), #D8ECFF;
     font-family: 'Old Standard TT', serif;
 }
 .corporate h1{
+    color: #363B40;
     font-family: 'Old Standard TT', serif;
 }
 .corporate h2{
+    color:#6C767F;
     font-family: 'Old Standard TT', serif;
 }
+
 .corporate hr {
-    
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #363B40;
 }
 
 .corporate p {
     font-family: 'Old Standard TT', serif;
 }
 
-.corporate a {
+.corporate nav {
+    text-align: center;
+}
 
+.corporate a {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.5);
+}
+.corporate a:hover {
+    color:#363B40;
+    background-color: rgba(54, 59, 64, 1);
+}
+.corporate a:active {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.5);
+}
+.corporate a:visited {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.8);
 }
 
 /* Fun */
+/* Colours - darkgreen orange orangered lightgoldenrodyellow */
+/* Fonts - Permanent Marker & Comic Sans */
 .fun{
     background-color: darkgreen;
-
 }
+
 .fun h1{
     font-family: 'Permanent Marker', cursive;
     color: orangered;
-
 }
+
 .fun h2{
     color: orange;
     font: 'Permanent Marker', sans-serif;
     font-family: 'Permanent Marker', cursive;
-
 }
-.fun hr {
 
+.fun hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: orange;
 }
 
 .fun p {
@@ -291,6 +383,39 @@ ul {
     font-family: 'comic sans', cursive;
 }
 
+.fun nav {
+    text-align: center;
+}
 .fun a {
+    padding: 30px 13px;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orange;
+    background-color: transparent;
+}
 
+.fun a:visited {
+    padding: 30px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orangered;
+    background-color: transparent;
+}
+
+.fun a:active {
+    padding: 30px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orange;
+    background-color: greenyellow;
+}
+
+.fun a:hover {
+    padding: 6px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    font-style: italic;
+    color: orange;
+    background-color: transparent;
 }
