@@ -79,7 +79,6 @@ body {
     border-bottom:  1px solid black;
     border-right: 1px solid black;
     box-shadow: 5px 5px 15px 0px #707070;
-
 }
 
 .sophisticated h1{
@@ -126,6 +125,7 @@ body {
     color: red;
     background-color: #646E78;
 }
+
 /* #endregion */
 
 /* #region Energetic */
@@ -155,14 +155,14 @@ body {
     padding-left: 1rem;
     color:white;
     background: #f22f08;
-   }
+}
 
 .energetic h2{
     margin: 0px;
     padding-left: 1rem;
     color: white;
     background: #212027;
-  }
+}
 
 .energetic hr {
     display: block;
@@ -226,15 +226,15 @@ body {
     font-family: 'Indie Flower', cursive;
     color: #c8d6ca;
     background-color: #5c3d46;
-
 }
+
 .relaxed h2{
     margin: NONE;
     text-align: center;
     font-family: 'Indie Flower', cursive;
     color: #99bfaa;
-
 }
+
 .relaxed hr {
     display: block;
     margin-top: 0.5em;
@@ -244,7 +244,6 @@ body {
     border-style: groove;
     border-width: 1px;
     border-color: #5c3d46;
-
 }
 
 .relaxed p {
@@ -255,6 +254,7 @@ body {
 .relaxed nav {
     text-align: center;
 }
+
 .relaxed a {
     font-family: 'Lato', sans-serif;
     margin: 5px;
@@ -276,6 +276,7 @@ body {
     color: #5c3d46;
     background-color: #5c868d;
 }
+
 /* #endregion */
 
 /* #region Corporate */
@@ -285,10 +286,12 @@ body {
     background-image: url("../img/texture1.jpg"), #D8ECFF;
     font-family: 'Old Standard TT', serif;
 }
+
 .corporate h1{
     color: #363B40;
     font-family: 'Old Standard TT', serif;
 }
+
 .corporate h2{
     color:#6C767F;
     font-family: 'Old Standard TT', serif;
@@ -317,18 +320,22 @@ body {
     color:#D8ECFF;
     background-color: rgba(54, 59, 64, 0.5);
 }
+
 .corporate a:hover {
     color:#363B40;
     background-color: rgba(54, 59, 64, 1);
 }
+
 .corporate a:active {
     color:#D8ECFF;
     background-color: rgba(54, 59, 64, 0.5);
 }
+
 .corporate a:visited {
     color:#D8ECFF;
     background-color: rgba(54, 59, 64, 0.8);
 }
+
 /* #endregion */
 
 /* #region Fun */
@@ -341,12 +348,14 @@ body {
 .fun h1{
     font-family: 'Permanent Marker', cursive;
     color: orangered;
+    text-shadow: 3px 3px 5px #003333;
 }
 
 .fun h2{
     color: orange;
     font: 'Permanent Marker', sans-serif;
     font-family: 'Permanent Marker', cursive;
+    text-shadow: 3px 3px 5px #003333;
 }
 
 .fun hr {
@@ -368,6 +377,7 @@ body {
 .fun nav {
     text-align: center;
 }
+
 .fun a {
     padding: 30px 13px;
     font-size: 16px;
@@ -375,6 +385,7 @@ body {
     font-style: italic;
     color: orange;
     background-color: transparent;
+    text-shadow: 3px 3px 5px #003333;
 }
 
 .fun a:visited {
@@ -401,4 +412,5 @@ body {
     color: orange;
     background-color: transparent;
 }
+
 /* #endregion */
