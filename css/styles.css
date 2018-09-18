@@ -1,0 +1,48 @@
+/* #region General */
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+/* #endregion */
+
+/* #region Top Bar Region */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    padding:0px;
+    background: yellow
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: grey;
+}
+/* #endregion */
+
+/* #region Hero / Navigation */
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 66vh;
+    background: no-repeat center/100% url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg), red;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-and-top-nav {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background: papayawhip;
+}
