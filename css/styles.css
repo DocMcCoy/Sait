@@ -8,25 +8,33 @@
     margin: 0 auto;
     max-width: 1000px;
   }
+
+  body {
+      font-family: sans-serif;
+      background: green;
+  }
+
+  ul {
+      margin: 0;
+      padding: 0;
+  }
+
+  li {
+    list-style: none;
+  }
 /* #endregion */
 
 /* #region Top Bar Region */
 header {
-    width: 100%;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
+    width: 100%;
     margin: 0px;
     padding:0px;
-    background: yellow
+    background: white;
 }
 
-.topbar {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background: grey;
-}
 /* #endregion */
 
 /* #region Hero / Navigation */
@@ -34,15 +42,77 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 66vh;
-    background: no-repeat center/100% url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg), red;
+    height: 400px;
+    background: url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg), red;
+    background-size: cover;
+    background-position: 55% 50%;
     margin: 0;
     padding: 0;
 }
 
 .logo-and-top-nav {
     display: flex;
+    justify-content: flex-end;
     width: 100%;
-    height: 20px;
-    background: papayawhip;
+    color: white;
+    /* background: rgba(255, 239, 213, 0.80); */
 }
+
+.logo {
+    /* background: url(./img/logo.svg) rgba(255, 0, 0, 0.473); */
+    width: 200px;
+    padding: 10px 0px;
+    margin-left: 80px;
+    filter: drop-shadow(5px 5px 2px black)
+}
+
+.top-nav {
+    display: flex;
+    margin-right: 80px;
+    margin-left: auto;
+    background: rgba(128, 0, 128, 0.514);
+    width: 100px;
+}
+
+.top-nav ul {
+
+}
+
+.call-to-action {
+    width: 50%;
+    max-height: calc(400px - 20px);
+    color: white;
+    background: rgba(255, 0, 0, 0.473);
+    margin: 50px 80px;
+    padding: 0;
+    text-shadow: 2px 2px 2px black;
+}
+
+.call-to-action h1 {
+    margin: 0;
+}
+
+/* #region Content */
+.content-1 {
+    height: 50px;
+}
+/* #endregion */
+
+/* #region Footer */
+
+footer {
+    margin: 0;
+    padding: 0;
+    background: rgba(211, 211, 211, 0.644);
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+/* #endregion */
