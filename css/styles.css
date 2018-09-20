@@ -10,17 +10,37 @@
   }
 
   body {
-      font-family: sans-serif;
-      background: green;
+    font-family: "proxima-nova",sans-serif;
+    /* background: green; */
   }
 
-  ul {
+    ul {
       margin: 0;
       padding: 0;
-  }
+    }
 
   li {
     list-style: none;
+  }
+
+  .debug {
+      background: rgba(255, 0, 0, 0.50);
+  }
+
+  .card {
+      width: 80%;
+      height: 250px;
+      /* background: rgba(255, 0, 0, 0.466); */
+      margin: 25px 0;
+      box-shadow: 2px 2px 5px 0px #222;
+  }
+
+  .h-spacer {
+      height: 10%;
+  }
+
+  .v-spacer {
+      width: 10%;
   }
 /* #endregion */
 
@@ -38,14 +58,20 @@ header {
 /* #endregion */
 
 /* #region Hero / Navigation */
+
 .hero {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px;
-    background: url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg), red;
+    height: 600px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0)
+      ), url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg);
     background-size: cover;
-    background-position: 55% 50%;
+    background-position: 0% 50%;
     margin: 0;
     padding: 0;
 }
@@ -53,49 +79,139 @@ header {
 .logo-and-top-nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    height: 20%;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
     color: white;
     /* background: rgba(255, 239, 213, 0.80); */
 }
 
 .logo {
     /* background: url(./img/logo.svg) rgba(255, 0, 0, 0.473); */
-    width: 200px;
+    width: 175px;
     padding: 10px 0px;
-    margin-left: 80px;
+    margin-left: 20px;
     filter: drop-shadow(5px 5px 2px black)
 }
 
 .top-nav {
     display: flex;
-    margin-right: 80px;
+    margin-right: 20px;
     margin-left: auto;
-    background: rgba(128, 0, 128, 0.514);
-    width: 100px;
+    font-family: "futura-pt-bold",sans-serif;
+    text-transform: uppercase;
+    /* background: rgba(128, 0, 128, 0.514); */
 }
 
 .top-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.top-nav li {
+    padding: 5px 8px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.top-nav li:last-child {
+    border: solid 2px white;
+    border-radius: 22% 25% 25% 25% / 50% 50% 50% 50%;
+}
+
+.hero-spacer {
+    height: 20%;
 }
 
 .call-to-action {
-    width: 50%;
-    max-height: calc(400px - 20px);
+    height: 60%;
+    width: 60%;
+    /* max-height: calc(400px - 20px); */
     color: white;
-    background: rgba(255, 0, 0, 0.473);
-    margin: 50px 80px;
+    /* background: rgba(255, 0, 0, 0.473); */
+    /* width: 80%;
+    margin: 0 auto;
+    max-width: 1000px; */
     padding: 0;
     text-shadow: 2px 2px 2px black;
 }
 
 .call-to-action h1 {
     margin: 0;
+    padding: 20px 0 10px;
+    font-family: "futura-pt-bold",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
 }
+.call-to-action span {
+    margin: 0;
+    padding: 0 0 10px;
+}
+.call-to-action button {
+    margin: 10px 0 0 0;
+    padding: 5px 10px;
+}
+/* #endregion */
 
 /* #region Content */
 .content-1 {
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    text-align:justify;
 }
+
+.content-1 p {
+    width: 80%;
+    /* text-align:justify; */
+}
+/* #endregion */
+
+/* #region Hero2 */
+.hero2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75), 
+        rgba(0, 0, 0, 0)
+      ), url(https://c2.staticflickr.com/2/1726/40749602280_be0037096c_k.jpg);
+    background-size: cover;
+    background-position: 50% 65%;
+}
+
+.hero2-header {
+    /* background: rgba(255, 0, 0, 0.404); */
+    color: white;
+    font-family: "futura-pt-bold",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hero2-header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* #endregion */
+
+/* #region content-2 */
+.content-2 {
+    height: 800px;
+    /* background: grey; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* #endregion */
 
 /* #region Footer */
@@ -104,6 +220,10 @@ footer {
     margin: 0;
     padding: 0;
     background: rgba(211, 211, 211, 0.644);
+}
+footer ul {
+    display: flex;
+    justify-content: space-around;
 }
 
 footer li {
