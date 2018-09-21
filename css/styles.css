@@ -53,6 +53,8 @@ header {
     margin: 0px;
     padding:0px;
     background: white;
+    font-family: "din-condensed";
+    letter-spacing: -1px;
 }
 
 /* #endregion */
@@ -66,11 +68,9 @@ header {
     align-items: center;
     width: 100%;
     height: 600px;
-    /* background: linear-gradient(
-        rgba(0, 0, 0, 0.75), 
-        rgba(0, 0, 0, 0)
-      ),  */
-    background: linear-gradient(to top, transparent,rgba(0, 0, 0, 0.75) 90%), url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg);
+    /* background: linear-gradient(to top, transparent,rgba(0, 0, 0, 0.75) 90%), linear-gradient(transparent,rgba(0, 0, 0, 0.75) 90%), url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg); */
+    /* background: url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg); */
+    background: linear-gradient(to bottom, rgba(0,2,34,0.75) 0%,rgba(0,2,34,0.5) 20%,rgba(0,2,34,0) 30%,rgba(0,2,34,0) 100%), url(https://c2.staticflickr.com/2/1895/42817997070_aefadd4c7d_k.jpg);
     background-size: cover;
     background-position: 0% 50%;
     margin: 0;
@@ -129,13 +129,34 @@ header {
 }
 
 .top-nav li:nth-child(6) {
+    background: red;
     border: solid 2px white;
-    border-radius: 22% 25% 25% 25% / 50% 50% 50% 50%;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px black;
+    transition-duration: 0.2s
+}
+
+.top-nav li:nth-child(6):hover {
+    transform: scale(1.1);
 }
 
 .top-nav li:nth-child(7) {
     display: none;
 }
+
+.top-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-nav li:nth-child(n+1):nth-child(-n+5):hover {
+    border: 2px solid white;
+    border-radius: 35px;
+    box-shadow: 2px 2px 5px 0px black;
+    padding: 5px 6px;
+}
+
+
 
 @media (max-width: 1000px) {
     .top-nav li:first-child {
@@ -151,6 +172,11 @@ header {
         display: inherit;
     }
 }
+@media (max-width: 420px) {
+    .top-nav li:nth-child(-n+6) {
+        display: none;
+    }
+}
 
 
 .hero-spacer {
@@ -158,15 +184,15 @@ header {
 }
 
 .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 60%;
     width: 60%;
-    /* max-height: calc(400px - 20px); */
     color: white;
     /* background: rgba(255, 0, 0, 0.473); */
-    /* width: 80%;
-    margin: 0 auto;
-    max-width: 1000px; */
-    padding: 0;
+
+    padding: 0 0 30px;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -194,13 +220,20 @@ header {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    text-align:justify;
+    padding: 80px 0px;
 }
 
 .content-1 p {
     width: 80%;
-    /* text-align:justify; */
+    text-align:justify;
 }
+
+.photo-credit p {
+    margin-left: 100px;
+    margin-right: 400px;   
+}
+
+
 /* #endregion */
 
 /* #region Hero2 */
@@ -242,6 +275,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 80px 0px;
 }
 
 /* #endregion */
@@ -251,20 +285,80 @@ header {
 footer {
     margin: 0;
     padding: 0;
-    background: rgba(211, 211, 211, 0.644);
-}
-footer ul {
-    display: flex;
-    justify-content: space-around;
+    height: 100%;
+    /* background: rgba(211, 211, 211, 0.644); */
+    background: #222;
 }
 
-footer li {
-    list-style: none;
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.footer-logo-and-forum-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo-and-forum-link .logo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 125px;
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    
+}
+
+.footer-logo-and-forum-link .top-nav {
+    padding: 0;
     margin: 0;
 }
 
-footer a {
+.footer-nav {
+    padding-top: 30px;
+    margin: 0 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.footer li {
+    list-style: none;
+    margin: 0;
+    color: white;
+}
+
+.footer a {
     color: white;
     text-decoration: none;
+}
+
+.footer h3 {
+    color: white;
+}
+
+
+.footer-logo-and-forum-link .top-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px;
+    border: 2px solid white;
+    border-radius: 35px;
+    text-shadow: 2px 2px 5px black;
+    background: red;
+    box-shadow: 5px 5px 5px 0px black;
 }
 /* #endregion */
