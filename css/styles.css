@@ -42,8 +42,6 @@ header {
     
     font-family: "din-condensed",sans-serif;
     text-align: end;
-
-    /* background: red; */
 }
 
 
@@ -70,8 +68,6 @@ header {
     padding-top: 10px;
     margin-bottom: auto;
     text-transform: uppercase;
-
-    /* background: red; */
 }
 
 .hero .logo {
@@ -97,7 +93,6 @@ header {
     font-size: 20px;
     font-family: "futura-pt-bold",sans-serif;
     font-weight: 700;
-    /* transition: 0.2s; */
 }
 
 .nav li {
@@ -184,8 +179,11 @@ header {
     .nav li:first-child {
         display: none;
     }
+    .feature-article h1 {
+        font-size: 110px;
+    }
 }
-@media (max-width: 900px) {
+@media (max-width: 950px) {
     .nav li:nth-child(-n+5) {
         display: none;
     }
@@ -202,7 +200,14 @@ header {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 950px) {
+    .feature-article h1 {
+        font-size: 90px;
+    }
+
+}
+
+@media (max-width: 750px) {
     .feature-article h1 {
         font-size: 80px;
     }
@@ -211,7 +216,7 @@ header {
     }
 }
 
-@media (max-width: 525px) {
+@media (max-width: 650px) {
     .feature-article h1 {
         font-size: 70px;
     }
@@ -220,7 +225,7 @@ header {
     }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 600px) {
     .nav li:nth-child(-n+6) {
         display: none;
     }
@@ -233,37 +238,56 @@ header {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 450px) {
     .feature-article h1 {
         font-size: 50px;
     }
 }
 
 
-@media (max-width: 330px) {
+@media (max-width: 420px) {
+    .feature-article h1 {
+        font-size: 28px;
+    }
+
+    .feature-article p {
+        font-size: 12px;
+    }
+
+    .feature-article button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 250px) {
     .feature-article {
         display: none;
     }
 }
+
 /* #region About Us Content */
 
 .content-1 {
-    /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,.9) 50%,rgba(255,255,255,0.2) 100%), url(../img/aboutus1.jpg) grey; */
     background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,.9) 50%,rgba(255,255,255,0.75) 100%), url(../img/aboutus1.jpg) grey;
     background-size: cover;
     background-position: 50% 100%;
-    padding: 80px;
+    padding: 80px 20px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* height: 600px; */
 }
 
 .content-1 div {
     width: 80%;
     max-width: 800px;
     margin: 10px auto;
+}
+
+@media (max-width: 800px) {
+    .content-1 {
+        padding: 40px 0px;
+    }
 }
 
 .content-1 p {
@@ -287,13 +311,13 @@ header {
     margin: 20px auto;
 }
 /* #region * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-    Featured Upcoming Events and Trip Reports Content
+    Profiles Content
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .content-2 {
-    /* height: 600px; */
-
-    /* background: yellow; */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,.9) 50%,rgba(255,255,255,0.75) 100%), url(../img/aboutus1.jpg) grey;
+    background-size: cover;
+    background-position: 50% 100%;
 
     display: flex;
     flex-direction: column;
@@ -309,7 +333,6 @@ header {
 .card {
     width: 80%;
     height: 250px;
-    /* background: rgba(255, 0, 0, 0.466); */
     margin: 25px 0;
     box-shadow: 2px 2px 5px 0px #222;
 }
@@ -349,6 +372,7 @@ header {
 
 .profile-card-pic-right img {
     float: right;
+    margin: 0px 0px 0px 20px
 }
 
 .profile-card-pic-right p {
@@ -367,6 +391,12 @@ header {
     transform: scale(1.1)
 }
 
+@media (max-width: 900px) {
+    .content-2 div {
+        width: 90%;
+    }
+
+}
 
 @media (max-width: 700px) {
     .profile-card-pic-left h3 {
@@ -560,6 +590,4 @@ footer {
     text-shadow: 2px 2px 5px black;
     background: red;
     box-shadow: 5px 5px 5px 0px black;
-
-    /* text-transform: uppercase; */
 }
