@@ -24,7 +24,7 @@ h1, h2, h3, p, ul, li, a {
 
 /* #endregion */
 
-/* #region Header */
+/* #region Header * * * * */
 
 /* Normal Top Navigation * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .nav {
@@ -68,14 +68,13 @@ h1, h2, h3, p, ul, li, a {
 
 /* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-/* #region Home Page */
+/* #region Home Page  * * */
 
 /* Home Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .home-page-hero {
-    /* Temp Height and Background */
-    /* height: 600px; */
-    background: grey; 
+    background: grey;
+    position: relative;
 }
 
 .home-page-hero h1 {
@@ -90,6 +89,50 @@ h1, h2, h3, p, ul, li, a {
     background: rgba(0, 0, 255, 0.432);
 }
 
+.hero-container {
+    display: flex;
+}
+
+.spin-container {
+    width: 25%;
+}
+
+.hero-text {
+    width: 75%;
+}
+
+.animated-hero-cards {
+    background-color: red;
+    margin-left: 20px;
+    border-radius: 50%;
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    min-width: 50px;
+    max-width: 500px;
+    padding-top: 5%;
+    -webkit-animation: rotation 20s infinite linear;
+    transform: skew(0deg, -25deg);
+    
+}
+
+
+.hero-card {
+    /* position: absolute; */
+    height: 20%;
+    font-size: 30px;
+
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
 /* Home Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .home-page-content {
@@ -97,19 +140,17 @@ h1, h2, h3, p, ul, li, a {
     background: white;
 }
 
-
-
 /* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-/* #region About Page */
+/* #region About Page   * */
 
 /* #endregion */
 
-/* #region Product */
+/* #region Product  * * * */
 
 /* #endregion */
 
-/* #region Contact */
+/* #region Contact  * * * */
 
 /* #endregion */
 
