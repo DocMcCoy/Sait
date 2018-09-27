@@ -75,6 +75,7 @@ h1, h2, h3, p, ul, li, a {
 .home-page-hero {
     background: grey;
     position: relative;
+    height: 20vw;
 }
 
 .home-page-hero h1 {
@@ -111,25 +112,79 @@ h1, h2, h3, p, ul, li, a {
     min-width: 50px;
     max-width: 500px;
     padding-top: 5%;
-    -webkit-animation: rotation 20s infinite linear;
-    transform: skew(0deg, -25deg);
-    
+    -webkit-animation: rotation 5s infinite linear;
+    /* transform: skew(0deg, -25deg); */
 }
 
 
 .hero-card {
     /* position: absolute; */
     height: 20%;
-    font-size: 30px;
+    font-size: 4vw;
 
 }
 
-@-webkit-keyframes rotation {
+.facebook-floater {
+    position: absolute;
+    top: 1%;
+    left: 45%;
+    animation:spin 20s linear infinite;
+}
+
+.www-floater {
+    font-family: sans-serif;
+    font-weight: 800;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    animation:spin 20s linear infinite;
+}
+
+.twitter-floater {
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    animation:spin 20s linear infinite;
+}
+
+.instagram-floater {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    animation:spin 20s linear infinite;
+}
+
+.youtube-floater {
+    position: absolute;
+    top:80%;
+    left: 60%;
+    animation:spin 20s linear infinite;
+}
+
+
+
+/* @-webkit-keyframes rotation {
     from {
-            -webkit-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg) ;
     }
     to {
-            -webkit-transform: rotate(359deg);
+            -webkit-transform: rotate(359deg) ;
+    }
+} */
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate3d(1, 0, 0, 45deg) ;
+    }
+    to {
+            -webkit-transform: rotate3d(1, 1, 1, 45deg) ;
+    }
+}
+@-webkit-keyframes spin {
+    from {
+            -webkit-transform: rotate(-45deg);
+    }
+    to {
+            -webkit-transform: rotate(-314deg);
     }
 }
 
