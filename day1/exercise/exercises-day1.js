@@ -6,7 +6,7 @@ document.write("Successfully Linked Exercises Day 1");
 
 // Open up index.html in the browser. If you see "Successfully Linked Exercises Day 1" on your page, you may continue.
 
-
+// Done diddly-done done.
 
 //1. Define a new variable `quote` for the value "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things."
 var quote = "A ship in port is safe, but that is not what ships are for. Sail out to sea and do new things.";
@@ -55,11 +55,12 @@ function sumOfLowNumbers (a, b, c, d, e) {
     console.log(a + b + c + d + e)
 };
 
-sumOfLowNumbers(5,5,4,5,5);
+sumOfLowNumbers(5,5,35,5,5); //variable c will = more than 6
 
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
 // Choose Project site, Start from scratch. When you're finished, link your new project page here.
 
-
+// https://docmccoy.github.io/
 
 //8. Commit and push this file to your repository. Submit the URL for Assignment 1 on Brightspace.
+
