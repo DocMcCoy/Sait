@@ -60,7 +60,7 @@ sumOfLowNumbers(5,5,35,5,5); //variable c will = more than 6
 //7. Go to https://pages.github.com/ and read through the tutorial to create a Github page.
 // Choose Project site, Start from scratch. When you're finished, link your new project page here.
 
-// https://docmccoy.github.io/
+// https://docmccoy.github.io/sait-js/day1/exercise/
 
 //8. Commit and push this file to your repository. Submit the URL for Assignment 1 on Brightspace.
 
