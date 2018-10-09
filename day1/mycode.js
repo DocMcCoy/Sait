@@ -18,3 +18,16 @@ var lastName = 'Wakely';
 var wholeName = 'The secret name is '+ firstName + ' ' + lastName;
 console.log(wholeName);
 
+function whyNot() {
+    console.log("Why not have a good time? We're not here for a long time.")
+    document.write("Why not have a good time? We're not here for a long time.")
+}
+
+whyNot();
+
+function nameGenerator(firstName, lastName) {
+    return firstName + ' ' + lastName;
+}
+
+console.log("My name written into the JS is " + firstName + " " + lastName)
+console.log("The Name entered into the prompts is " + nameGenerator(prompt("What's yer first name?"), prompt("What's yer last name?")))
