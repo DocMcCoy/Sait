@@ -9,19 +9,27 @@ document.write("Successfully Linked Problem Set 2");
 //1. Create an array `numbers` that contains the first 10 decimals of Pi
 //(e.g., 1415926535).
 //console.log the array
-
+var numbers = [1,4,1,5,9,2,6,5,3,5]
+console.log(numbers)
 
 //2. Use bracket notation to change the `4` in the array to a `4.2`.
 //console.log the updated array
 
+numbers[1] = 4.2;
+console.log(numbers);
 
 //3. Add the number 3 to the end of the array.
 //console.log the updated array
-
+numbers.push (3);
+console.log(numbers);
 
 //4. Create a function named `sumOfArray` that loops through an array, and returns the sum of all the numbers that are less than or equal to 5
 
-
+function sumOfArray () {
+    if (sumOfArray.length){
+        
+    }
+}
 
 /* You can use these to test your function:
 
