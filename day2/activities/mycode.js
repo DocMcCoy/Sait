@@ -305,7 +305,13 @@ var moviesAndBooks = favoriteMovies.concat(favoriteBooks);
 
 console.log(moviesAndBooks);
 
-var moviesWithLongTitles = moviesAndBooks.filter(word => word.length > 6);
+function isTitleLong(word) {
+    if (word.length > 6) {
+        return true;
+    }
+}
+
+var moviesWithLongTitles = moviesAndBooks.filter(isTitleLong);
 
 console.log(moviesWithLongTitles);
 
@@ -347,11 +353,10 @@ console.log("We are " + date.getDate() + " days into the month.") ;
 
 function dayOfWeek(i) {
     var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
-    console.log(day[i]);
+    return day[i];
 }
 
-console.log("It's " + dayOfWeek(date.getDay) + " today!");
+console.log("It's " + dayOfWeek(date.getDay()) + " today!");
 
 console.log("-------------------------------------"); //simple break for console log
 
@@ -362,6 +367,18 @@ console.log("-------------------------------------"); //simple break for console
 console.log("Math");
 console.log("-------------------------------------"); //simple break for console log
 
+console.log("This following number is Pi: " + Math.PI);
+
+function randomNumber(){
+    return Math.random();
+}
+
+console.log("The following is a pseudo-random number between 0 and 1; \n " + randomNumber());
+
+var randomPi = randomNumber() * Math.PI
+
+console.log(randomPi)
+console.log(Math.round(randomPi));
 
 console.log("-------------------------------------"); //simple break for console log
 
