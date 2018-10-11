@@ -373,13 +373,65 @@ function randomNumber(){
     return Math.random();
 }
 
-console.log("The following is a pseudo-random number between 0 and 1; \n " + randomNumber());
+console.log("The following is a pseudo-random number between 0 and 1: \n" + randomNumber());
 
 var randomPi = randomNumber() * Math.PI
 
-console.log(randomPi)
-console.log(Math.round(randomPi));
+console.log("The following is Pi multiplied by the pseudo-random number: \n" + randomPi)
+console.log("The following is the previous number rounded the nearest whole number: \n" + Math.round(randomPi));
 
 console.log("-------------------------------------"); //simple break for console log
 
 // #endregion
+
+// #region Strings
+
+console.log("Strings");
+console.log("-------------------------------------"); //simple break for console log
+
+//  1.  Create a variable myName and assign it the value of your rst andlast name.
+//  2.  Find the length of your string.
+//  3.  Log the lowercase version of your name.
+//  4.  Use substr() to log your last name5. Use substring() to log your last name.
+
+var myName = "David Wakely"
+console.log("My name is " + myName + "\nand it is precicely " + myName.length + " characters long.");
+console.log("My name in lowercase looks like;\n" + myName.toLowerCase());
+console.log("My last name is " + myName.substring(6))
+console.log("My last name is " + myName.substr(6))
+
+console.log("-------------------------------------"); //simple break for console log
+
+// #endregion
+
+// #region Recipe Page Activity
+
+console.log("Strings");
+console.log("-------------------------------------"); //simple break for console log
+
+//  1.  Go back to your recipe object.
+//  2.  Add a function that:
+//          -Takes the recipe object as an argument.
+//          -Creates a variable with today's date.
+//          -Displays a recipe with:
+//              -Recipe Title
+//              -Date Published (today's date) in any format you choose
+//              -The first 50 characters of the directions with "..." at the end.
+
+function recipePage(holder) {
+    console.log("\nCheck the index.html for the Recipe Summary \n \n");
+    var date = new Date();
+    var publishDate = date.toDateString();
+    console.log(holder.recipeTitle + "\n\n" + "Published: " + publishDate + "\n\n" + holder.recipeDEscription.substr(0,50) + "...");
+    document.getElementById("recipeTitle").innerHTML = holder.recipeTitle
+    document.getElementById("publishDate").innerHTML = "Published: " + publishDate
+    document.getElementById("recipeSynopsis").innerHTML = holder.recipeDEscription.substr(0,50) + "..."
+}
+
+recipePage(favoriteRecipe);
+
+console.log("-------------------------------------"); //simple break for console log
+
+// #endregion
+
+console.log("End of console.log")
