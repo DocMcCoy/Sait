@@ -40,6 +40,8 @@ function go () {
     }
 go();
 
+
+//button forward function
 function quoteMachineClick(a) {
     if (a < quotesArrayLength){
         a++;
@@ -52,6 +54,8 @@ function quoteMachineClick(a) {
     }
 }
 
+
+//button back function
 function quoteMachineBack(a) {
     if (a > 0){
         a--;
