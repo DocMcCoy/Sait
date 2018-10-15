@@ -35,16 +35,16 @@
             </div>
             <div class='quizrow'>
                 <label for="quiz3">What are the colours of the five Olympic rings? Click all that apply.</label><br>
-                <input type="checkbox" class="checkitout" name="quiz3" value="red" /> Red
-                <input type="checkbox" class="checkitout" name="quiz3" value="green" /> Green
-                <input type="checkbox" class="checkitout" name="quiz3" value="blue" /> Blue
-                <input type="checkbox" class="checkitout" name="quiz3" value="yellow" /> Yellow
-                <input type="checkbox" class="checkitout" name="quiz3" value="white" /> White
-                <input type="checkbox" class="checkitout" name="quiz3" value="black" /> Black
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="red" /> Red
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="green" /> Green
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="blue" /> Blue
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="yellow" /> Yellow
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="white" /> White
+                <input type="checkbox" class="checkitout" name="quiz3[]" value="black" /> Black
             </div>
             <div class='quizrow'>
                 <label for="quiz4">Which of the following is the largest island in the Mediterranean?</label><br>
-                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="sardinia" required/> Sardinia
+                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="sardinia" required /> Sardinia
                 <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="corsica" /> Corsica
                 <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="majorca" /> Majorca
                 <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="sicily" /> Sicily
@@ -52,20 +52,36 @@
             <div class='quizrow'>
                 <label for="quiz5">Can you name the four planets that are positioned closest to the Sun?</label><br>
                 <input type="checkbox" class="checkitout" name="quiz5" value="mercury" /> Mercury
-                <input type="checkbox" class="checkitout" name="quiz5" value="venus"  /> Venus
-                <input type="checkbox" class="checkitout" name="quiz5" value="earth"  /> Earth
-                <input type="checkbox" class="checkitout" name="quiz5" value="mars"  /> Mars
-                <input type="checkbox" class="checkitout" name="quiz5" value="jupiter"  /> Jupiter
-                <input type="checkbox" class="checkitout" name="quiz5" value="saturn"  /> Saturn
-                <input type="checkbox" class="checkitout" name="quiz5" value="neptune"  /> Neptune
-                <input type="checkbox" class="checkitout" name="quiz5" value="uranus"  /> Uranus
-                <input type="checkbox" class="checkitout" name="quiz5" value="pluto"  /> Pluto
+                <input type="checkbox" class="checkitout" name="quiz5" value="venus" /> Venus
+                <input type="checkbox" class="checkitout" name="quiz5" value="earth" /> Earth
+                <input type="checkbox" class="checkitout" name="quiz5" value="mars" /> Mars
+                <input type="checkbox" class="checkitout" name="quiz5" value="jupiter" /> Jupiter
+                <input type="checkbox" class="checkitout" name="quiz5" value="saturn" /> Saturn
+                <input type="checkbox" class="checkitout" name="quiz5" value="neptune" /> Neptune
+                <input type="checkbox" class="checkitout" name="quiz5" value="uranus" /> Uranus
+                <input type="checkbox" class="checkitout" name="quiz5" value="pluto" /> Pluto
             </div>
             <div class='quizrow'>
                 <input name="submit" id="submit" type="submit" value="Submit">
             </div>
+            <p id="errorQuiz1" style="display:none;">This isn't that hard ... just guess!</p>
+            <p id="errorQuiz2" style="display:none;">This isn't that hard ... just guess!</p>
+            <p id="errorQuiz3" style="display:none;">This isn't that hard ... just guess!</p>
+            <p id="errorQuiz4" style="display:none;">This isn't that hard ... just guess!</p>
+            <p id="errorQuiz5" style="display:none;">This isn't that hard ... just guess!</p>
         </form>
     </div>
+
+    <fieldset id="question1">
+            <legend>Which are fruit?</legend>
+            <label><INPUT TYPE="checkbox" NAME="input" VALUE="wrong">tomatoes<BR></label>
+            <label><INPUT TYPE="checkbox" NAME="input" VALUE="wrong">cucumber<BR></label>
+            <label><INPUT TYPE="checkbox" NAME="input" VALUE="right">apples<BR></label>
+            <label><INPUT TYPE="checkbox" NAME="input" VALUE="wrong">onion<BR></label>
+            <label><INPUT TYPE="checkbox" NAME="input" VALUE="right">bananas<BR></label>
+        </fieldset>
+        <input type="button" id="answer" value="Submit">
+        
     <script src="./js/code.js"></script>
 </body>
 
