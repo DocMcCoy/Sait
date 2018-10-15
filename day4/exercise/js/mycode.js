@@ -28,11 +28,11 @@ function go () {
     if (i < quotesArrayLengthMinusOne){
         i++
         quoteMachine(i);
-        setTimeout(go, 3000);}
+        setTimeout(go, 30000);}
     else if (i = quotesArrayLengthMinusOne){
         i=0
         quoteMachine(i);
-        setTimeout(go, 3000);}// callback
+        setTimeout(go, 30000);}// callback
     else {alert("error")}
     }
     function quoteMachine(a) {
