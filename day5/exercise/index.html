@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <!-- Create a Quiz
+      √  • Create 5 or more quiz questions with a total of 3 different types of inputs.
+      √  • Display the questions on your page.
+        • Require that each question be filled out.
+        • When a user submits the quiz, score it and display their score.
+        • Once you've finished creating your quiz, modify your code to only show one quiz question at a time.
+        • Consider everything you've learned up through now. Make your quiz look and feel good. This could be a potential project for your portfolio.
+        • When you are done, create a Github page for this project and submit a link to the actual quiz website.
+          If you have questions about your code, please email me the Github page link or your repository link. Please don't copy/paste your code into email. Thank you.** -->
+
+    <div class="wrapper">
+        <h2>Quiz</h2>
+        <p>Here is my super hard quiz</p>
+        <form name="myForm" action="#">
+            <div class='quizrow'>
+                <label for="quiz1">Which sport is associated with a velodrome?</label><br>
+                <input type="text" id="quiz1" name="quiz1" placeholder="Go ahead and guess ..." required>
+            </div>
+            <div class='quizrow'>
+                <label for="quiz2">Which major ocean is located between Europe and North America?</label><br>
+                <input type="text" id="quiz2" name="quiz2" placeholder="Go ahead and guess ..." required>
+            </div>
+            <div class='quizrow'>
+                <label for="quiz3">What are the colours of the five Olympic rings? Click all that apply.</label><br>
+                <input type="checkbox" class="checkitout" name="quiz3" value="red" /> Red
+                <input type="checkbox" class="checkitout" name="quiz3" value="green" /> Green
+                <input type="checkbox" class="checkitout" name="quiz3" value="blue" /> Blue
+                <input type="checkbox" class="checkitout" name="quiz3" value="yellow" /> Yellow
+                <input type="checkbox" class="checkitout" name="quiz3" value="white" /> White
+                <input type="checkbox" class="checkitout" name="quiz3" value="black" /> Black
+            </div>
+            <div class='quizrow'>
+                <label for="quiz4">Which of the following is the largest island in the Mediterranean?</label><br>
+                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="sardinia" required/> Sardinia
+                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="corsica" /> Corsica
+                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="majorca" /> Majorca
+                <input type="radio" id="quiz4" class="radioradio" name="quiz4" value="sicily" /> Sicily
+            </div>
+            <div class='quizrow'>
+                <label for="quiz5">Can you name the four planets that are positioned closest to the Sun?</label><br>
+                <input type="checkbox" class="checkitout" name="quiz5" value="mercury" /> Mercury
+                <input type="checkbox" class="checkitout" name="quiz5" value="venus"  /> Venus
+                <input type="checkbox" class="checkitout" name="quiz5" value="earth"  /> Earth
+                <input type="checkbox" class="checkitout" name="quiz5" value="mars"  /> Mars
+                <input type="checkbox" class="checkitout" name="quiz5" value="jupiter"  /> Jupiter
+                <input type="checkbox" class="checkitout" name="quiz5" value="saturn"  /> Saturn
+                <input type="checkbox" class="checkitout" name="quiz5" value="neptune"  /> Neptune
+                <input type="checkbox" class="checkitout" name="quiz5" value="uranus"  /> Uranus
+                <input type="checkbox" class="checkitout" name="quiz5" value="pluto"  /> Pluto
+            </div>
+            <div class='quizrow'>
+                <input name="submit" id="submit" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <script src="./js/code.js"></script>
+</body>
+
+</html>
