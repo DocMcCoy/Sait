@@ -17,16 +17,54 @@ var quotes = [
 
 //make a function to count throught the array
 
-function quoteCounter() {
+console.log(quotes.length);
 
+var quotesArrayLength = quotes.length;
+var quotesArrayLengthPlusOne = quotes.length + 1;
+var quotesArrayLengthMinusOne = quotes.length - 1;
+
+var i = 0;
+function go () {
+    if (i < quotesArrayLengthMinusOne){
+        i++
+        quoteMachine(i);
+        setTimeout(go, 30000);}
+    else if (i = quotesArrayLengthMinusOne){
+        i=0
+        quoteMachine(i);
+        setTimeout(go, 30000);}// callback
+    else {alert("error")}
+    }
+    function quoteMachine(a) {
+        document.getElementById("quote").innerHTML = quotes[a];
+    }
+go();
+
+
+//button forward function
+function quoteMachineClick(a) {
+    if (a < quotesArrayLength){
+        a++;
+        document.getElementById("quote").innerHTML = quotes[a];
+        i = a;
+    }else {
+        a = 0
+        document.getElementById("quote").innerHTML = quotes[a];
+        i = a;
+    }
 }
 
-//Test 
 
-document.getElementById("quote").innerHTML = quotes[2];
+//button back function
+function quoteMachineBack(a) {
+    if (a > 0){
+        a--;
+        document.getElementById("quote").innerHTML = quotes[a];
+        i = a;
+    } else {
+        a=quotesArrayLengthMinusOne;
+        document.getElementById("quote").innerHTML = quotes[a];  
+        i = a;  
+    }
+}
 
-// quotebox.innerHTML = quotebox.innerHTML.replace(quotes[0])
-
-// document.body.innerHTML = document.body.innerHTML.replace('hello', 'hi');
-
-// Javascript Click the button with a timer
