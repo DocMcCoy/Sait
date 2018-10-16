@@ -17,3 +17,20 @@ $('body').on('keypress', function (event) {
     // outputs element clicked
     console.log(event.target);
 });
+
+$('form').on('submit', function(event) {
+    event.preventDefault();
+    console.log('Not submitting the form!');
+    //Maybe I want to do stuff first.
+});
+
+// $("#error").hide();
+$("#error").slideDown();
+
+// $("#error").fadeIn(500);
+
+// $("#error").show(1000,function() {
+//     $(this).addClass('alert');
+// });
+
+

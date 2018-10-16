@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Activity 3 - JQuerry</title>
+    <style>
+        .alert {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,6 +18,12 @@
     <p>Welcome to jQuerry!</p>
     <header>This is the header!</header>
     <p class="try">hello</p>
+    <p id="error">Achtung!</p>
+    <form action="#" id="myForm">
+        <input type="text" name="fname" id="">
+        <button type="submit">Submit</button>
+    </form>
+
     <button id="button">Button</button>
     <br>
     <br>
@@ -20,7 +31,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
-        window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
+        window.jQuery || document.write('<script src="./js/jquery-3.3.1.min.js"><\/script>')
     </script>
     <script src="./js/code.js"></script>
 </body>
