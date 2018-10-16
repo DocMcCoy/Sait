@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+   <title>jQuery + Youtube</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- In this exercise, you'll turn an unordered list of link titles into a linked list of thumbnails with jQuery, instead of native JavaScript. 
+
+    First, download the jQuery library from jquery.com and save it into the same directory as your exercise files. Then, add a <script> tag to the page which loads in the jQuery library you just downloaded.
+    
+    Next, replace the existing code with jQuery - any DOM manipulation can be done with jQuery instead. If you're not sure how to do something with jQuery, google for "X with jQuery" and you will likely find the jQuery docs or StackOverflow questions.
+
+    Make sure that you use your browser developer tools to make debugging easier while working on this. Check for errors, and use console.log() to figure out how far your code makes it, and what the values of your variables are along the way.
+    -->
+  </head>
+  <body>
+    <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1 class="page-header">Best Videos Ever ❤</h1>
+      </div>
+    </div>
+ 
+    <div class="row">
+      <div class="span3">
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=AzSmX3zeYn0">Ruby Falls!</a></li>
+          <li><a href="https://www.youtube.com/watch?v=rr8zJ8VAazA">Winter in Waiparous</a></li>
+          <li><a href="https://www.youtube.com/watch?v=-N-FiLtb744">Top of the World</a></li>
+        </ul>
+       </div>
+     </div>
+    </div>
+    <script src="./js/jquery-3.3.1.js"></script>
+    <script src="./js/youtube.js"></script>
+    
+    <script>
+      $(document).ready(function() {
+    var links = $('a');
+
+  // Use the jQuery each method to loop through each link.
+    links.each(function() {
+
+      // Take each link and assign it to the variable link
+      var link = $(this);
+      var href = $(this).attr('href');
+      var thumbnail = youtube.generateThumbnailUrl(href);
+      var img = $('<img src=' + thumbnail +'>');
+      $(this).append(img)
+      // console.log(href);
+      // console.log(thumbnail);
+      // console.log(img);
+    });
+  });
+    </script>
+  </body>
+</html>
