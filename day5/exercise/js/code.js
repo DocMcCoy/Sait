@@ -69,7 +69,6 @@ submitButton.addEventListener("click", function(event) {
     }
 });
 
-// http://jsfiddle.net/dY372/
 
 
 // document.getElementById("answer").onclick = validate;
