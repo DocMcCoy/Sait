@@ -13,9 +13,64 @@ h1, h2, h3 {
     padding: 0;
 }
 
+.header {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
 .palletecontainer {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
-    height: 15vw;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.spacer {
+    margin: 10px 0;
+}
+
+.mainWrapper {
+    width: 80%;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: white;
+    padding-top: 20px;
+}
+
+.congrats {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 5ms;
+}
+
+.invisible {
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 5ms;
+ }
+
+.mainWrapper h1, h2 {
+    padding:10px 0;
 }
 
 .wrapper {
@@ -26,12 +81,20 @@ h1, h2, h3 {
 }
 
 .roundDiv {
-    width: calc(20% - 10px);
+    width: 12vw;
+    max-width: 160px;
+    height: 12vw;
+    max-height: 160px;
     border-radius: 50%;
-    background: red;
-    margin: 10px 10px 10px 0px;
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.roundDiv:hover {
+    color: black;
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -57,10 +120,6 @@ input[type=submit] {
     width: 100%;
 }
 
-input[type=submit]:hover {
-    background-color: red;
-}
-
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -79,6 +138,8 @@ input[type=submit]:hover {
     margin: 6px 0;
 }
 
+
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -93,3 +154,4 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+

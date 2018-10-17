@@ -1,37 +1,53 @@
 // Test to see if the various scripts are linked;
 
 random = Math.random()
-
 var colorstest = randomColor(Math.round(Math.random() * 20));
+console.log("Random Number of Colour Array = " + colorstest)
 
-console.log(colorstest)
 
 
+$('.congrats').fadeIn("slow");
 // Color Options:
 // spec­ify the hue, lu­mi­nos­ity and the num­ber of col­ors to gen­er­ate
 
-$('form').on('submit', function(event) {
-    event.preventDefault();
-    console.log('Not submitting the form!');
-    
-});
-
-var luminosity = "light";
-var hue = "red";
-var colorNumber = 5;
-var colors = randomColor({hue: hue,luminosity: luminosity,count: colorNumber});
-console.log(colors)
-
 $(document).ready(function () {
-    var colors = randomColor({hue: hue,luminosity: luminosity,count: colorNumber});
-    console.log(colors)
-    // Use the jQuery each method to loop through each link.
-    $.each(colors, function (index, value) {
+    $('input[type=submit]').css({ 'background-color': randomColor({ hue: "random", luminosity: "dark" }) });
+    $('input[type=submit]').click(function () {
+        event.preventDefault();
+        $("#congrats").removeClass("invisible").addClass("congrats");
+        var hue = $('input[name=hue]:checked').val();
+        console.log(hue);
+        var luminosity = $('input[name=luminosity]:checked').val();
+        console.log(luminosity);
+        var colorNumber = $('#count').find(":selected").text();
+        console.log(colorNumber);
 
-        // console.log each color
-        console.log(value);
-        
+        var colors = randomColor({ hue: hue, luminosity: luminosity, count: colorNumber });
+        console.log(colors)
+        $("#pallete").empty();
+        // Use the jQuery each method to loop through each link.
+        $.each(colors, function (index, value) {
+            var color = value;
+            $('input[type=submit]').css({ 'background-color': randomColor({ hue: "random", luminosity: "dark" }) });
+            $('#pallete').append('<div class="roundDiv" data-clipboard-target="' + color + '" style="color: ' + color + '; background: ' + color + '">\\' + color + '</div>')
+
+            console.log(color);
+
+        });
+
+
     });
+
+
 });
 
-
+$('.roundDiv').click(function () {
+var divColor = document.getElementById('roundDiv');
+var clipboard = new ClipboardJS(divColor);
+clipboard.on('success', function (e) {
+    console.log(e);
+});
+clipboard.on('error', function (e) {
+    console.log(e);
+});
+});

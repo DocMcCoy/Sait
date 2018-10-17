@@ -11,9 +11,12 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <h1>Color Palette Generator</h1>
-        <h2>Exercise Day 6</h2>
+    <div class="mainWrapper">
+        <div class="header">
+            <h1>Color Palette Generator</h1>
+            <h2>Exercise Day 6</h2>
+        </div>
+
         <div class="container wrapper">
             <form action="#" id="colorForm">
                 <div class="row">
@@ -23,10 +26,15 @@
                         <label for="hue">Hue:</label>
                     </div>
                     <div class="col-75">
-                        <input type="radio" id="hue" class="hueradio" name="hue" value="red" required /> Red
+                        <input type="radio" id="hue" class="hueradio" name="hue" value="red" checked="checked" required />
+                        Red
                         <input type="radio" id="hue" class="hueradio" name="hue" value="blue" /> Blue
                         <input type="radio" id="hue" class="hueradio" name="hue" value="green" /> Green
                         <input type="radio" id="hue" class="hueradio" name="hue" value="yellow" /> Yellow
+                        <input type="radio" id="hue" class="hueradio" name="hue" value="orange" /> Orange
+                        <input type="radio" id="hue" class="hueradio" name="hue" value="purple" /> Purple
+                        <input type="radio" id="hue" class="hueradio" name="hue" value="pink" /> Pink
+                        <input type="radio" id="hue" class="hueradio" name="hue" value="monochrome" /> Monochrome
                     </div>
                 </div>
                 <div class="row">
@@ -34,7 +42,8 @@
                         <label for="luminosity">Luminosity</label>
                     </div>
                     <div class="col-75">
-                        <input type="radio" id="luminosity" class="luminosityradio" name="luminosity" value="normal" />
+                        <input type="radio" id="luminosity" class="luminosityradio" name="luminosity" value="normal"
+                            checked="checked" />
                         Normal
                         <input type="radio" id="luminosity" class="luminosityradio" name="luminosity" value="light" />
                         Light
@@ -44,7 +53,7 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">How Many Colours Would You Like?:</label>
+                        <label for="count">How Many Colours Would You Like?:</label>
                     </div>
                     <div class="col-75">
                         <select id="count" name="count">
@@ -60,20 +69,25 @@
                 </div>
             </form>
         </div>
-        <div class="palletecontainer wrapper">
+        <div id="pallete" class="palletecontainer">
+            <!-- <div class="roundDiv"></div>
             <div class="roundDiv"></div>
             <div class="roundDiv"></div>
             <div class="roundDiv"></div>
-            <div class="roundDiv"></div>
-            <div class="roundDiv"></div>
+            <div class="roundDiv"></div> -->
         </div>
         <div class="palletecontainer wrapper">
-            
+        
         </div>
+        <div id="congrats" class="invisible">
+            Congrats!
+        </div>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
     <script src="./js/code.js"></script>
 </body>
 
