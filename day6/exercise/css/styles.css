@@ -168,6 +168,10 @@ input[type=submit] {
         margin-top: 0;
     }
 
+    input[type=submit] {
+        margin-top: 10px;
+    }
+
     .roundDiv {
         font-size: 8px;
         margin-left:5px
