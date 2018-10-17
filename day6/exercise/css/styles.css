@@ -113,6 +113,7 @@ label {
 }
 
 input[type=submit] {
+    margin-top: 10px;
     background-color: red;
     color: white;
     padding: 12px 20px;
