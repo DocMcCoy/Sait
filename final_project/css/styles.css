@@ -1,16 +1,525 @@
+/* possible colors silver foil grey/green = #afb1ae 
+Websafe version is - #c0c0c0 
+*/
+
+
+/* #region General Styles and UNFormating */
+
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
+    background: linear-gradient(rgba(0,0,0,1) 10%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,1) 90%), url(../img/background.jpg)#222;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1366px;
+}
+
+.headerfooterwrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 .mainwrapper {
     width: 80%;
-    max-width: 1000px;
+    max-width: 1366px;
     margin: 0 auto;
     min-height: 100vh;
-    background: white;
+    background: #aaa;
 }
+
+/* #endregion */
+
+/* #region Header * * * * */
+
+/* Normal Top Navigation * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+header {
+    background: black;
+}
+
+.nav {
+    display: flex;
+    font-size: 2em;
+    font-family: "din-condensed", sans-serif;
+    text-transform: uppercase;
+}    
+
+.nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav button {
+    background: none;
+    color: white;
+    border: none;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav button:hover {
+    background: radial-gradient(#ff0000 0%,#000000 75%);
+    text-shadow: 3px 3px 20px red;
+}
+
+.nav a {
+    color: white;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-shadow: 3px 3px 20px red;
+}
+
+.nav a:active {
+    color: red;
+    text-shadow: 3px 3px 20px red;
+}
+
+.logo {
+    filter: drop-shadow(3px 3px 20px red);
+    position: relative;
+}
+
+.logo i {
+    transform: rotate(15deg);
+    font-size: 2em;
+    position: relative;
+}
+
+.nav li:last-child {
+    display: none;
+}
+
+/* Mobile Menu Item * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.mobile-menu button {
+    display: flex;
+    align-items: center;
+    background: none;
+    color: red;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.mobile-menu a {
+    font-family: "din-condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    z-index: 1000;
+}
+
+.mobile-menu a:hover, .mobile-menu button:hover {
+    text-shadow: 3px 3px 20px red;
+}
+
+.closed {
+    transform: translate(100vw, 0);
+}
+
+/* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* #region Home Page  * * */
+
+/* Home Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-page-hero {
+    background: linear-gradient(rgba(0,0,0,1) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 100%),url(../img/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+
+.home-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.home-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* Home Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-page-content {
+    padding: 2em 20px 1em;
+
+}
+
+.home-page-content p {
+    margin: 1em 0;
+}
+
+.content-columns {
+    margin: 1em 0;
+    display: flex;
+    text-align: justify;
+}
+
+.column1 {
+    width: 50%;
+    margin-right: 1em;
+    background: #eee;
+    box-shadow: 1px 1px 10px #222;
+    filter: grayscale(75%);
+    transition: 0.5s;
+    transform-origin: right;
+}
+
+.column1:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    box-shadow: 1px 1px 50px 2px #ff0000;
+}
+
+.column1 img {
+    max-width: 100%;
+}
+
+.column2 {
+    width: 50%;
+    margin-left: 1em;
+    background: #eee;
+    box-shadow: 1px 1px 10px #222;
+    filter: grayscale(75%);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.column1 h2, .column1 p, .column2 h2, .column2 p {
+    padding: 2px 10px;
+}
+
+.column2:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    box-shadow: 1px 1px 50px 2px #ff0000; 
+}
+
+.column2 img {
+    max-width: 100%;
+}
+
+/* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* #region Packages */
+/* Product Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.product-page-hero {
+    background: linear-gradient(rgba(0,0,0,1) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 100%), url(../img/planets/coruscant-cityscape.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+
+.product-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.product-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* Product Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.product-page-content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em 20px 1em;
+}
+
+.product-page-content p {
+    margin: 1em 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.product-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 2px 20px #222;
+    margin: 20px 0;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region Footer * * * * */
+
+footer {
+    color: white;   
+    padding: 20px 0px;
+    background: black;
+    font-family: "din-condensed",sans-serif;
+}
+
+footer .headerfooterwrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+
+footer .logo li i {
+    text-align: center;
+}
+
+footer a {
+    color: white; 
+    text-shadow: 0px 0px 10px black;  
+}
+
+footer a:hover {
+    text-shadow: 1px 1px 20px red;
+}
+
+.social-icons {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* #endregion */
+
+/* About Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-page-hero {
+    background: url(../img/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+
+.about-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.about-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* About Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-page-content {
+    padding: 2em 20px 1em;
+
+}
+
+.about-page-content p {
+    margin: 1em 0;
+}
+
+.about-cards {
+    margin: 1em 0;
+}
+
+.about-card {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-shadow: 2px 2px 20px #222;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.about-card h2, .about card p {
+    padding: 20px
+}
+
+.about-img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 30%;
+}
+
+.about-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about-text {
+    width: 70%;
+}
+
+/* #endregion */
+
+/* #region Media Querries */
+
+/* 900px - Reduce the Font Size of the menu to facilitate the responsiveness */
+@media (max-width: 900px) {
+    .nav {
+        font-size: 1.25em;
+    }
+
+    .nav .logo i {
+        font-size: 2em;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .about-img {
+        width: 40%;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* 500px - Switch to the Mobile Menu Option - Footer Navigation Switches to a Column */
+
+@media (max-width: 600px) {
+    .nav li:last-child {
+        display: inherit;
+    }
+
+    .nav li:nth-child(n+2):nth-child(-n+5) {
+        display: none;
+    }
+
+    .content-columns {
+        flex-direction: column;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+        margin: 10px 0;
+        transform-origin: center;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 95%;
+    }
+
+    footer .headerfooterwrapper {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 auto;
+    }
+
+    footer ul, .social-icon-container {
+        margin: 10px 30px;  
+    }
+   
+    .social-icons {
+        margin-left: 0;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+/* #endregion */
