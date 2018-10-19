@@ -179,6 +179,7 @@ header {
     background-size: cover;
     background-position: center;
     height: 40vw;
+    min-height: 400px;
 }
 
 .home-page-hero h1 {
