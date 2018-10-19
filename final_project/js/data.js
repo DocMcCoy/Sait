@@ -32,6 +32,5 @@ planet2.innerHTML = "Planet: " + planet[1];
 // Retrieves names for the agentsArray - UNUSED - Instead just console logged the results.
 for (var i = 1; i <= 88; i++) {
     let apiUrl = 'https://swapi.co/api/people/' + i;
-    fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name))
-    ;
+    fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name));
 };
