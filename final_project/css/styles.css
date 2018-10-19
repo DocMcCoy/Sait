@@ -370,6 +370,34 @@ input[type=submit]:hover {
     margin-bottom: 6px;
 }
 
+#errorName {
+    display: none;
+}
+
+#errorAddress {
+    display: none;
+}
+
+#errorCity {
+    display: none;
+}
+
+#errorCode {
+    display: none;
+}
+
+#errorEmail {
+    display: none;
+}
+
+#errorPhone {
+    display: none;
+}
+
+#errorPlanet {
+    display: none;
+}
+
 
 /* Clear floats after the columns */
 .row:after {
