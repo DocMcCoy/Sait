@@ -1,3 +1,11 @@
+// David Wakely
+// david@wakely.ca
+// October 19th, 2018
+// CPNT-262-WBD - Web Client & Server Prog.
+// final assignment - Day 9 Workshop Javascript
+
+
+
 let myForm = document.getElementById('myForm')
 let submit = document.getElementById('submit')
 let fName  = document.getElementById('fname')

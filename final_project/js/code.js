@@ -1,11 +1,12 @@
-console.log("Linked!")
+// David Wakely
+// david@wakely.ca
+// October 19th, 2018
+// CPNT-262-WBD - Web Client & Server Prog.
+// final assignment - Day 9 Workshop Javascript
 
-// Code by David Wakely
-// email: david@wakely.ca
 
-// const agentsArray = "test";
-// let randomPerson = Math.floor((Math.random() * 88) + 1);
-
+// test for linked script
+console.log("Mobile Menu and Footer Script Linked!")
 
 // #region Mobile Menu ---------------------------------------------------------
 
@@ -15,7 +16,6 @@ let closeButton = document.getElementById('close-button')
 let mobileMenu = document.getElementById('mobile-menu')
 
 // 2. define actions
-
 function open() {
     mobileMenu.className = 'mobile-menu'
     mobileMenu.setAttribute('aria-hidden', 'false')
@@ -37,6 +37,7 @@ closeButton.addEventListener('click', close)
 // #region Date ----------------------------------------------------------------
 
 function formatDate(date) {
+    // create array of full month names
     var monthNames = [
         "January", "February", "March",
         "April", "May", "June", "July",
@@ -44,29 +45,12 @@ function formatDate(date) {
         "November", "December"
     ];
 
-    var day = date.getDate();
-    var monthIndex = date.getMonth();
-    var year = date.getFullYear();
+    var day = date.getDate(); //get the current day
+    var monthIndex = date.getMonth(); //get the numeric month
+    var year = date.getFullYear(); //get the full four digit year
 
-    return monthNames[monthIndex] + ' ' + day + ', ' + year;
+    return monthNames[monthIndex] + ' ' + day + ', ' + year; //return a string constructed from the variables
 }
-document.getElementById("footerDate").innerHTML = formatDate(new Date());
-console.log();
+document.getElementById("footerDate").innerHTML = formatDate(new Date()); // place the formatted date into the footer HTML
 
 // #endregion -------------------------------------------------------------------
-
-// #region SW API
-
-// function getPersonInfo(n) {
-    
-//     let apiUrl = 'https://swapi.co/api/people/' + n;
-
-//     fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name));
-// };
-
-// getPersonInfo(randomPerson);
-
-// #endregion
-
-
-
