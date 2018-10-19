@@ -52,51 +52,80 @@
         </div>
         <div class="register-page-content wrapper">
             <h2>...the Dark Side!</h2>
-        <p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns
-            stack on top of each other instead of next to each other.</p>
+        <p>Enter your details below to be monitored by the benevolent Emperor's hand, as well as get great deals on space travel.</p>
         </div>
         
 
-        <div class="wrapper container">
-            <form action="/action_page.php">
+        <div class="container">
+            <form action="#" id="myForm" name="myForm">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name</label>
+                        <label for="fname">Name</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" id="fname" name="fname" placeholder="Your name..">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="lname">Last Name</label>
+                        <label for="faddress">Address</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <input type="text" id="faddress" name="faddress" placeholder="Your address..">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="country">Country</label>
+                        <label for="fcity">City</label>
                     </div>
                     <div class="col-75">
+                        <input type="text" id="fcity" name="fcity" placeholder="Your city..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fcode">Postal Code</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fcode" name="fcode" placeholder="Your postal code.. with a space and no dash">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="femail">E-Mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="femail" name="femail" placeholder="Your e-mail address ...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fnumber">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fnumber" name="fnumber" placeholder="Your phone number ...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="countrycol-25">
+                        <label for="country">Planet</label>
+                    </div>
+                    <div class="countrycol-75">
                         <select id="country" name="country">
-                            <option value="australia">Australia</option>
-                            <option value="canada">Canada</option>
-                            <option value="usa">USA</option>
+                            <option value="alderaan">Alderaan</option>
+                            <option value="bespin">Bespin</option>
+                            <option value="coruscant">Coruscant</option>
+                            <option value="dagobah">Dagobah</option>
+                            <option value="hoth">Hoth</option>
+                            <option value="kaskyyyk">Kashyyk</option>
+                            <option value="naboo">Naboo</option>
+                            <option value="tatooine">Tatooine</option>
+                            <option value="Yavin">Yavin</option>
                         </select>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-25">
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    </div>
-                </div>
-                <div class="row">
-                    <input type="submit" value="Submit">
+                    <input type="submit" id="submit" name="name" value="Force Submit">
                 </div>
             </form>
         </div>
@@ -144,6 +173,7 @@
         </div>
     </footer>
     <!-- Scripts -->
+    <script src="./js/register.js"></script>
     <script src="./js/code.js"></script><!-- My Javascript -->
 </body>
 

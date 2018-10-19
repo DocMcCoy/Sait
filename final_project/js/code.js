@@ -3,8 +3,8 @@ console.log("Linked!")
 // Code by David Wakely
 // email: david@wakely.ca
 
-const agentsArray = "test";
-let randomPerson = Math.floor((Math.random() * 88) + 1);
+// const agentsArray = "test";
+// let randomPerson = Math.floor((Math.random() * 88) + 1);
 
 
 // #region Mobile Menu ---------------------------------------------------------
@@ -57,14 +57,14 @@ console.log();
 
 // #region SW API
 
-function getPersonInfo(n) {
+// function getPersonInfo(n) {
     
-    let apiUrl = 'https://swapi.co/api/people/' + n;
+//     let apiUrl = 'https://swapi.co/api/people/' + n;
 
-    fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name));
-};
+//     fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name));
+// };
 
-getPersonInfo(randomPerson);
+// getPersonInfo(randomPerson);
 
 // #endregion
 
