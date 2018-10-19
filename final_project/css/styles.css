@@ -10,6 +10,10 @@ Websafe version is - #c0c0c0
 }
 
 body {
+    font-family: "franklin-gothic-urw-cond", arial, helvetica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(rgba(0,0,0,1) 10%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,1) 90%), url(../img/background.jpg)#222;
     background-size: cover;
@@ -23,6 +27,7 @@ body {
 
 .headerfooterwrapper {
     width: 85%;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -37,7 +42,7 @@ h1, h2, h3, p, ul, li, a {
     width: 80%;
     max-width: 1366px;
     margin: 0 auto;
-    min-height: 100vh;
+   
     background: #aaa;
 }
 
@@ -94,16 +99,26 @@ header {
     text-shadow: 3px 3px 20px red;
 }
 
-.logo {
+.logo-svg {
+    height: 3em;
+    width: 3em;
+    filter: drop-shadow(3px 3px 20px red);
+    padding-top: 5px;
+    position: relative;
+}
+
+/* .logo {
     filter: drop-shadow(3px 3px 20px red);
     position: relative;
 }
+
+
 
 .logo i {
     transform: rotate(15deg);
     font-size: 2em;
     position: relative;
-}
+} */
 
 .nav li:last-child {
     display: none;
@@ -190,7 +205,6 @@ header {
 
 .home-page-content {
     padding: 2em 20px 1em;
-
 }
 
 .home-page-content p {
@@ -209,8 +223,9 @@ header {
     background: #eee;
     box-shadow: 1px 1px 10px #222;
     filter: grayscale(75%);
+    border-radius: 10px;
     transition: 0.5s;
-    transform-origin: right;
+    transform-origin: right;    
 }
 
 .column1:hover {
@@ -221,6 +236,8 @@ header {
 
 .column1 img {
     max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .column2 {
@@ -229,6 +246,7 @@ header {
     background: #eee;
     box-shadow: 1px 1px 10px #222;
     filter: grayscale(75%);
+    border-radius: 10px;
     transition: 0.5s;
     transform-origin: left;
 }
@@ -244,12 +262,93 @@ header {
 }
 
 .column2 img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     max-width: 100%;
 }
 
 /* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-/* #region Packages */
+/* #region Register * * * */
+.register-page-hero {
+    background: linear-gradient(rgba(0,0,0,1) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 100%),url(../img/contact/vader.png);
+    background-size: cover;
+    background-position: 50% 0;
+    height: 40vw;
+}
+
+.register-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.register-page-content {
+    padding: 2em 20px 1em;
+}
+
+.register-page-content p {
+    margin: 1em 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+/* #endregion */
+/* #region Packages * * * */
 /* Product Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .product-page-hero {
@@ -290,6 +389,13 @@ header {
     margin: 1em 0;
 }
 
+.product-slideshow {
+    width: 100%;
+    height: 300px;
+    box-shadow: 2px 2px 20px #222;
+    border-radius: 5px;
+}
+
 .product-cards {
     display: flex;
     justify-content: space-between;
@@ -303,6 +409,7 @@ header {
     padding: 20px;
     box-shadow: 2px 2px 20px #222;
     margin: 20px 0;
+    border-radius: 5px;
 }
 
 .product-img {
@@ -472,7 +579,7 @@ footer a:hover {
         display: inherit;
     }
 
-    .nav li:nth-child(n+2):nth-child(-n+5) {
+    .nav li:nth-child(n+2):nth-child(-n+4) {
         display: none;
     }
 

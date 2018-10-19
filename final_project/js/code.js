@@ -3,6 +3,10 @@ console.log("Linked!")
 // Code by David Wakely
 // email: david@wakely.ca
 
+const agentsArray = "test";
+let randomPerson = Math.floor((Math.random() * 88) + 1);
+
+
 // #region Mobile Menu ---------------------------------------------------------
 
 // 1. get elements
@@ -31,6 +35,7 @@ closeButton.addEventListener('click', close)
 // #endregion
 
 // #region Date ----------------------------------------------------------------
+
 function formatDate(date) {
     var monthNames = [
         "January", "February", "March",
@@ -48,22 +53,20 @@ function formatDate(date) {
 document.getElementById("footerDate").innerHTML = formatDate(new Date());
 console.log();
 
+// #endregion -------------------------------------------------------------------
 
+// #region SW API
 
-// let date = () => {
-//     let monthNames = [
-//       "January", "February", "March",
-//       "April", "May", "June", "July",
-//       "August", "September", "October",
-//       "November", "December"
-//     ];
-//     let day = date.getDate();
-//     let monthIndex = date.getMonth();
-//     let year = date.getFullYear();
-//     return monthNames[monthIndex] + ' ' + day + ' ' + year;
-// };
-// console.log(date(new Date()));
+function getPersonInfo(n) {
+    
+    let apiUrl = 'https://swapi.co/api/people/' + n;
 
-// document.getElementById("footerDate").innerHTML = date();
+    fetch(apiUrl).then(response => response.json()).then(data => console.log(data.name));
+};
+
+getPersonInfo(randomPerson);
 
 // #endregion
+
+
+
