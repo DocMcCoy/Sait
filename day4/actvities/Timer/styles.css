@@ -1,0 +1,7 @@
+#timer-block {
+    position: absolute;
+    top: 50vh - 100px;
+    left: 50vw - 100px;
+    border: solid;
+   }
+

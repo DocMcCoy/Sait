@@ -1,0 +1,195 @@
+<!-- David Wakely
+     david@wakely.ca
+     October 19th, 2018
+     CPNT-262-WBD - Web Client & Server Prog.
+     final assignment - Day 9 Workshop Javascript -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.typekit.net/pts5scn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Join the Dark Side - Imperial</title>
+</head>
+
+<body>
+
+    <!-- Header and Navigation Content -->
+
+    <header>
+        <div class='mobile-menu closed' id='mobile-menu' aria-hidden='true'>
+            <button id='close-button'><i class="fas fa-times-circle"></i></button>
+            <ul>
+                <!-- <li><a href="./index.html">Home</a></li> -->
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./product.html">Packages</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav headerfooterwrapper">
+            <ul>
+                <li><a class="logo" href="./index.html"><img class="logo-svg" src="./img/logo/logo-white.svg" alt="Imperial Travel Agency Logo"></a></li>
+                <!-- <i class="far fa-paper-plane"></i> -->
+                <!-- <li><a href="./index.html">Home</a></li> -->
+                <li><a href="./register.html">Register</a></li>
+                <li><a href="./packages.html">Packages</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><button id='open-button' class="hamburger" aria-expanded='false' aria-controls='mobile-menu' href="#"><i
+                            class="fas fa-bars"></i></button></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Register Page Hero -->
+
+    <div class="mainwrapper">
+        <div class="register-page-hero">
+            <div class="register-text wrapper ">
+                <h1>Join</h1>
+                <p></p>
+            </div>
+        </div>
+        <div class="register-page-content wrapper">
+            <h2>...the Dark Side!</h2>
+        <p>Enter your details below to be monitored by the benevolent Emperor's hand, as well as get great deals on space travel.</p>
+        </div>
+        
+        <!-- Register Page Content -->
+
+        <div class="container">
+            <form action="#" id="myForm" name="myForm">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="fname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="faddress">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="faddress" name="faddress" placeholder="Your address..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fcity">City</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fcity" name="fcity" placeholder="Your city..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fcode">Postal Code</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fcode" name="fcode" placeholder="Your postal code.. with a space and no dash">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="femail">E-Mail</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="femail" name="femail" placeholder="Your e-mail address ...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fnumber">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fnumber" name="fnumber" placeholder="Your phone number ...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="countrycol-25">
+                        <label for="country">Planet</label>
+                    </div>
+                    <div class="countrycol-75">
+                        <select id="country" name="country">
+                            <option value="alderaan">Alderaan</option>
+                            <option value="bespin">Bespin</option>
+                            <option value="coruscant">Coruscant</option>
+                            <option value="dagobah">Dagobah</option>
+                            <option value="hoth">Hoth</option>
+                            <option value="kaskyyyk">Kashyyk</option>
+                            <option value="naboo">Naboo</option>
+                            <option value="tatooine">Tatooine</option>
+                            <option value="Yavin">Yavin</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" id="submit" name="name" value="Force Submit">
+                </div>
+            </form>
+            <div id="errorcontainer">
+                <div id="errorName">Try entering a name!</div>
+                <div id="errorAddress">Try entering an address!</div>
+                <div id="errorCity">Try entering a city!</div>
+                <div id="errorCode">Try entering a postal code!</div>
+                <div id="errorEmail">Try entering an email!</div>
+                <div id="errorPhone">Try entering a phone number!</div>
+                <div id="errorPlanet">Try entering a planet that still exists!</div>            
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="headerfooterwrapper">
+            <ul>
+                <li><a class="logo" href="#header"><img class="logo-svg" src="./img/logo/logo-white.svg" alt="Imperial Travel Agency Logo"></a></li>
+            </ul>
+            <ul>
+                <h3><a href="./register.html">Register</a></h3>
+                <li><a href="./about.html#header">About Top</a></li>
+                <li><a href="./about.html#about-page-content">Who We Are</a></li>
+                <li><a href="./about.html#footer">About Bottom</a></li>
+            </ul>
+            <ul>
+                <h3><a href="./packages.html">Packages</a></h3>
+                <li><a href="./product.html#header">Product Top</a></li>
+                <li><a href="./product.html#product-page-content">Products</a></li>
+                <li><a href="./product.html#footer">Product Bottom</a></li>
+            </ul>
+            <ul>
+                <h3><a href="./contact.html">Contact</a></h3>
+                <li><a href="./contact.html#header">Contact Top</a></li>
+                <li><a href="./contact.html#contact-page-content">Contact Form</a></li>
+                <li><a href="./contact.html#footer">Bottom</a></li>
+            </ul>
+            <div class="social-icon-container">
+                <h3>Follow Us!</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <h3>Date</h3>
+                <ul class="date">
+                    <li id="footerDate"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="./js/register.js"></script><!-- Handles Form Data and Validation -->
+    <script src="./js/code.js"></script><!-- Handles Mobile Menu and Footer Date -->
+</body>
+
+</html>
