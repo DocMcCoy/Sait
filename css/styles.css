@@ -1,0 +1,416 @@
+/* #region Outside Wrapper */
+#active {
+    background-color: #7193B2;
+}
+
+.navbar {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#646E78;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: papayawhip;
+    background-color:#646E78;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.navbar li a:hover {
+    background-color: #7193B2;
+}
+
+body {
+    background-color: #FFF9EE;
+}
+
+.footer {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #646E78;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer li {
+    float: right;
+    text-transform: uppercase;
+    font-family: 'Libre Franklin', sans-serif;
+    color: papayawhip;
+    background-color: #7193B2;
+    padding: 14px 16px;
+}
+
+/* #endregion */
+
+/* #region Sophisticated */
+/* Colours - #FFF9EE #646E78 papayawhip #CCBFAA*/
+/* Fonts - Libre Franklin */
+
+.sophisticated{
+    font-family: 'Libre Franklin', sans-serif;
+    background-color: #FFF9EE;
+}
+
+.sophisticated header {
+    background-color: #646E78;
+    padding: 1rem;
+    border-bottom:  1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 15px 0px #707070;
+}
+
+.sophisticated h1{
+    color: papayawhip;
+    drop: inset 6px 5px 15px 0px #707070;
+}
+
+.sophisticated h2{
+    color: papayawhip;
+}    
+
+.sophisticated section {
+    padding: 1rem;
+}
+
+.sophisticated p {
+    color: #646E78;
+}
+
+.sophisticated nav {
+    text-align: center;
+}
+
+.sophisticated a {
+    margin: 5px;
+    color: papayawhip;
+    background-color: #646E78;
+    border-bottom:  1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 5px 5px 15px 0px #707070;
+}
+
+.sophisticated a:visited {
+    color: #CCBFAA;
+    background-color: #646E78;
+}
+
+.sophisticated a:hover {
+    color: rgb(235, 226, 212);
+    background-color: #646E78;
+}
+
+.sophisticated a:active {
+    color: red;
+    background-color: #646E78;
+}
+
+/* #endregion */
+
+/* #region Energetic */
+/* Colors - #594346 #212027 #f22f08 #8d2f23 #561e18 */
+/* Fonts - Abril Fatface & Monterrat */
+
+.energetic {
+    font-family: 'Abril Fatface', cursive;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 700px;
+    margin-top: 100px;
+    background-color: white;
+    border: solid thick #7193B2;
+    /* padding: 1rem; */
+}
+
+.energetic header {
+    /* padding: 1rem; */
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: #f22f08;
+}
+
+.energetic h1{
+    margin: 0px;
+    padding-left: 1rem;
+    color:white;
+    background: #f22f08;
+}
+
+.energetic h2{
+    margin: 0px;
+    padding-left: 1rem;
+    color: white;
+    background: #212027;
+}
+
+.energetic hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f22f08;
+}
+
+.energetic section {
+    padding: 1rem;
+    background: #DCDCDC;
+}
+
+.energetic p {
+    font-family: 'Montserrat', sans-serif;
+    color: #212027;
+}
+
+.energetic nav {
+    text-align: center;
+}
+
+.energetic a {
+    background: #696969;
+    color: #DCDCDC;
+    font-size: 105%;
+    margin-left: 0px;
+    margin-right: 0px;   
+}
+
+.energetic a:visited {
+    color: #A9A9A9;
+}
+
+.energetic a:hover {
+    color: #f22f08;
+}
+
+.energetic a:active {
+    color: #f22f08;
+}
+
+/* #endregion */
+
+/* #region Relaxed */
+/* Colours - #5c3d46 #5c868d #99bfaa #c8d6ca #e7f5de */
+/* Fonts - Indie Flower & Lato*/
+
+.relaxed{
+    background-color: #e7f5de;
+}
+
+.relaxed h1{
+    text-align: center;
+    padding: 20PX;
+    margin: .5em;
+    font-family: 'Indie Flower', cursive;
+    color: #c8d6ca;
+    background-color: #5c3d46;
+}
+
+.relaxed h2{
+    margin: NONE;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: #99bfaa;
+}
+
+.relaxed hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-style: groove;
+    border-width: 1px;
+    border-color: #5c3d46;
+}
+
+.relaxed p {
+    font-family: 'Lato', sans-serif;
+    color: #5c868d;
+}
+
+.relaxed nav {
+    text-align: center;
+}
+
+.relaxed a {
+    font-family: 'Lato', sans-serif;
+    margin: 5px;
+    color: #e7f5de;
+    background-color: #99bfaa;
+}
+
+.relaxed a:visited {
+    color: #e7f5de;
+    background-color: #c8d6ca;
+}
+
+.relaxed a:hover {
+    color: #e7f5de;
+    background-color: #5c868d;
+}
+
+.relaxed a:active {
+    color: #5c3d46;
+    background-color: #5c868d;
+}
+
+/* #endregion */
+
+/* #region Corporate */
+/* Colors - #A2B1BF #6C767F #D8ECFF #363B40 #C2D4E5 */
+.corporate{
+    background: #D8ECFF;
+    background-image: url("../img/texture1.jpg"), #D8ECFF;
+    font-family: 'Old Standard TT', serif;
+}
+
+.corporate h1{
+    color: #363B40;
+    font-family: 'Old Standard TT', serif;
+}
+
+.corporate h2{
+    color:#6C767F;
+    font-family: 'Old Standard TT', serif;
+}
+
+.corporate hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+    border-color: #363B40;
+}
+
+.corporate p {
+    font-family: 'Old Standard TT', serif;
+}
+
+.corporate nav {
+    text-align: center;
+}
+
+.corporate a {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.5);
+}
+
+.corporate a:hover {
+    color:#363B40;
+    background-color: rgba(54, 59, 64, 1);
+}
+
+.corporate a:active {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.5);
+}
+
+.corporate a:visited {
+    color:#D8ECFF;
+    background-color: rgba(54, 59, 64, 0.8);
+}
+
+/* #endregion */
+
+/* #region Fun */
+/* Colours - darkgreen orange orangered lightgoldenrodyellow */
+/* Fonts - Permanent Marker & Comic Sans */
+.fun{
+    background-color: darkgreen;
+}
+
+.fun h1{
+    font-family: 'Permanent Marker', cursive;
+    color: orangered;
+    text-shadow: 3px 3px 5px #003333;
+}
+
+.fun h2{
+    color: orange;
+    font: 'Permanent Marker', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    text-shadow: 3px 3px 5px #003333;
+}
+
+.fun hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: orange;
+}
+
+.fun p {
+    color: lightgoldenrodyellow;
+    font-family: 'comic sans', cursive;
+}
+
+.fun nav {
+    text-align: center;
+}
+
+.fun a {
+    padding: 30px 13px;
+    font-size: 16px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orange;
+    background-color: transparent;
+    text-shadow: 3px 3px 5px #003333;
+}
+
+.fun a:visited {
+    padding: 30px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orangered;
+    background-color: transparent;
+}
+
+.fun a:active {
+    padding: 30px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic;
+    color: orange;
+    background-color: greenyellow;
+}
+
+.fun a:hover {
+    padding: 6px 13px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 40px;
+    font-style: italic;
+    color: orange;
+    background-color: transparent;
+}
+
+/* #endregion */
