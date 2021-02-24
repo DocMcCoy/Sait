@@ -1,0 +1,146 @@
+/* Home Page */
+.active li a{
+    background-color: #7193B2;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#646E78;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: papayawhip;
+    background-color:#646E78;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar li a:hover {
+    background-color: #7193B2;
+}
+
+body {
+    background-color: #FFF9EE
+}
+
+/* Sophisticated */
+.sophisticated{
+
+}
+.sophisticated h1{
+
+}
+.sophisticated h2{
+
+}
+.sophisticated hr {
+
+}
+
+.sophisticated p {
+
+}
+
+.sophisticated a {
+    color: blanchedalmond
+}
+
+/* Energetic */
+.energetic{
+
+}
+.energetic h1{
+
+}
+.energetic h2{
+
+}
+.energetic hr {
+
+}
+
+.energetic p {
+
+}
+
+.energetic a {
+
+}
+
+/* Relaxed */
+.relaxed{
+
+}
+.relaxed h1{
+
+}
+.relaxed h2{
+
+}
+.relaxed hr {
+
+}
+
+.relaxed p {
+
+}
+
+.relaxed a {
+
+}
+
+/* Corporate */
+.corporate{
+
+}
+.corporate h1{
+
+}
+.corporate h2{
+
+}
+.corporate hr {
+
+}
+
+.corporate p {
+
+}
+
+.corporate a {
+
+}
+
+/* Fun */
+.fun{
+
+}
+.fun h1{
+
+}
+.fun h2{
+
+}
+.fun hr {
+
+}
+
+.fun p {
+
+}
+
+.fun a {
+
+}
