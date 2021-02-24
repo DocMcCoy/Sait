@@ -1,2 +1,3 @@
-# sait-js
-Repository for JS Exercise
+# Javascript at SAIT
+
+Repository for the JS exercises we did at SAIT.
