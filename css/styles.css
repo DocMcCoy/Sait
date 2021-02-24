@@ -1,0 +1,635 @@
+/* 
+Assignment 4. Four Page Website - 40%
+Feel free to use lorem ipsum for the content. I will be marking this project based on the following:
+
+Structure
+This project should have either 4 pages or 4 sections, depending on style of site. Those 4 sections or pages are:
+1. Home / Main
+can be product summary
+can be service summary
+2. About
+can be who are you
+can be what you do
+can be who your staff is
+3. Product
+can be product details
+can be service details
+4. Contact
+This must involve an input field and submit button
+Does not need to submit anywhere
+Example could be email input, comments input and a send button
+General
+- Nav must include a logo
+- All links to other pages or sections must work
+- Must include hero section
+- Must include social icons on every page (common place is in the footer)
+- Site must be responsive
+- Site must have a working mobile menu
+- Site must include a css transition (other than the mobile navigation) */
+
+
+
+/* #region General Styles and UNFormating */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* #endregion */
+
+/* #region Header * * * * */
+
+/* Normal Top Navigation * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+header {
+    background: black;
+}
+
+.nav {
+    display: flex;
+    font-size: 2em;
+    font-family: "din-condensed", sans-serif;
+    text-transform: uppercase;
+}    
+
+.nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav button {
+    background: none;
+    color: white;
+    border: none;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav button:hover {
+    background: radial-gradient(#ff0000 0%,#000000 75%);
+    text-shadow: 3px 3px 20px red;
+}
+
+.nav a {
+    color: white;
+    text-shadow: 1px 1px 20px rgba(255, 0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    text-shadow: 3px 3px 20px red;
+}
+
+.nav a:active {
+    color: red;
+    text-shadow: 3px 3px 20px red;
+}
+
+.logo {
+    filter: drop-shadow(3px 3px 20px red);
+    position: relative;
+}
+
+.logo i {
+    transform: rotate(-45deg);
+    font-size: 2em;
+    position: relative;
+}
+
+.nav li:last-child {
+    display: none;
+}
+
+/* Mobile Menu Item * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,1) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,0) 100%);
+    transition: 0.3s;
+    padding: 20px;
+}
+
+.mobile-menu button {
+    display: flex;
+    align-items: center;
+    background: none;
+    color: red;
+    border: none;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.mobile-menu a {
+    font-family: "din-condensed", sans-serif;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    z-index: 1000;
+}
+
+.mobile-menu a:hover, .mobile-menu button:hover {
+    text-shadow: 3px 3px 20px red;
+}
+
+.closed {
+    transform: translate(100vw, 0);
+}
+
+/* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* #region Home Page  * * */
+
+/* Home Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-page-hero {
+    background: url(../img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vw;
+}
+
+.home-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.home-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* Home Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.home-page-content {
+    padding: 2em 20px 1em;
+    background: white;
+}
+
+.home-page-content p {
+    margin: 1em 0;
+}
+
+.content-columns {
+    margin: 1em 0;
+    display: flex;
+    text-align: justify;
+}
+
+.column1 {
+    width: 50%;
+    margin-right: 1em;
+    box-shadow: 1px 1px 10px lightgrey;
+    filter: grayscale(75%);
+    transition: 0.5s;
+    transform-origin: right;
+}
+
+.column1:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    box-shadow: 1px 1px 50px 2px #ff0000;
+}
+
+.column1 img {
+    max-width: 100%;
+}
+
+.column2 {
+    width: 50%;
+    margin-left: 1em;
+    box-shadow: 1px 1px 10px lightgrey;
+    filter: grayscale(75%);
+    transition: 0.5s;
+    transform-origin: left;
+}
+
+.column1 h2, .column1 p, .column2 h2, .column2 p {
+    padding: 2px 10px;
+}
+
+.column2:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+    box-shadow: 1px 1px 50px 2px #ff0000; 
+}
+
+.column2 img {
+    max-width: 100%;
+}
+
+/* #endregion * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* #region About Page   * */
+
+/* About Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-page-hero {
+    background: url(../img/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+
+.about-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.about-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* About Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.about-page-content {
+    padding: 2em 20px 1em;
+    background: white;
+}
+
+.about-page-content p {
+    margin: 1em 0;
+}
+
+.about-cards {
+    margin: 1em 0;
+}
+
+.about-card {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-shadow: 2px 2px 20px lightgray;
+    margin: 20px 0;
+}
+
+.about-card h2, .about card p {
+    padding: 20px
+}
+
+.about-img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 30%;
+}
+
+.about-img img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.about-text {
+    width: 70%;
+}
+
+/* #endregion */
+
+/* #region Product  * * * */
+
+/* Product Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.product-page-hero {
+    background: url(../img/img10.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
+
+.product-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.product-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* Product Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.product-page-content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em 20px 1em;
+    background: white;
+}
+
+.product-page-content p {
+    margin: 1em 0;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.product-card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 2px 20px lightgray;
+    margin: 20px 0;
+}
+
+.product-img {
+    width: 100%;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+/* #endregion */
+
+/* #region Contact  * * * */
+
+/* Product Page Hero * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.contact-page-hero {
+    background: url(../img/img11.jpg);
+    background-size: cover;
+    background-position: 50 50;
+    height: 40vw;
+}
+
+.contact-page-hero h1 {
+    padding: 80px 0px 10px;
+    font-family: "industry-inc-base",sans-serif;
+    text-align: right;
+    color: white;
+    text-shadow: 3px 3px 20px red;
+}
+
+.contact-page-hero p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+    padding: 10px 0;
+    color: #ddd;
+    text-shadow:
+   -1px -1px 0 black,  
+    1px -1px 0 black,
+    -1px 1px 0 black,
+     1px 1px 0 black;
+}
+
+/* Contact Page Content * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.contact-page-content {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em 20px 1em;
+    background: white;
+}
+
+.contact-page-content p {
+    margin: 1em 0;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+  
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+  
+input[type=submit] {
+background-color: red;
+color: white;
+padding: 12px 20px;
+margin-top: 10px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+  
+.container {
+border-radius: 5px;
+background-color: rgba(0, 0, 0, 0.1);
+padding: 20px;
+}
+  
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+  
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+  
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* #endregion */
+
+/* #region Footer * * * * */
+
+footer {
+    color: white;   
+    padding: 20px 0px;
+    background: grey;
+    font-family: "din-condensed",sans-serif;
+}
+
+footer .wrapper {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+footer h3 {
+    text-transform: uppercase;
+    text-shadow: 0 0 10px black;
+}
+
+footer ul {
+    height: 80px;
+}
+
+footer .logo li i {
+    text-align: center;
+}
+
+footer a {
+    color: white; 
+    text-shadow: 0px 0px 10px black;  
+}
+
+footer a:hover {
+    text-shadow: 1px 1px 20px red;
+}
+
+.social-icons {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* #endregion */
+
+/* #region Media Querries */
+
+/* 900px - Reduce the Font Size of the menu to facilitate the responsiveness */
+@media (max-width: 900px) {
+    .nav {
+        font-size: 1.25em;
+    }
+
+    .nav .logo i {
+        font-size: 2em;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+
+    .about-img {
+        width: 40%;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .product-cards {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+}
+
+/* 500px - Switch to the Mobile Menu Option - Footer Navigation Switches to a Column */
+
+@media (max-width: 600px) {
+    .nav li:last-child {
+        display: inherit;
+    }
+
+    .nav li:nth-child(n+2):nth-child(-n+5) {
+        display: none;
+    }
+
+    .content-columns {
+        flex-direction: column;
+    }
+
+    .column1, .column2 {
+        width: 100%;
+        margin: 10px 0;
+        transform-origin: center;
+    }
+
+    .about-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 95%;
+    }
+
+    footer .wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        margin: 0 auto;
+    }
+
+    footer ul, .social-icon-container {
+        margin: 10px 30px;  
+    }
+   
+    .social-icons {
+        margin-left: 0;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+/* #endregion */
